@@ -18,7 +18,7 @@ Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y l
 
 ### Análisis Principal
 
-**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en los documento Main.ipynb.**
+**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.**
 
 Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
 
