@@ -18,7 +18,7 @@ Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y l
 
 ### Análisis Principal
 
-**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.**
+**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en los documento Main.ipynb.**
 
 Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
 
@@ -33,8 +33,7 @@ Estudiamos la tasa de incidentes por cohorte, es decir los distintos estados de 
 
 4. **RFM (Recency, Frequency, Monetary) :** 
 Utilizamos el modelo RFM para segmentar a los clientes en función de sus hábitos. Definimos cuatro 'monetary rankings' de Recency (qué tan recientemente un cliente realizó una compra), Frequencia (con qué frecuencia un cliente realiza una compra), y Monetary Value (cuánto dinera gasta un cliente).
-
-Nuestros hallazgos y gráficos se pueden revisar en detalle en los documentos Exploratory_Analysis.ipynb y Conclusiones.
+Nuestros hallazgos y gráficos se pueden revisar en detalle en los documentos Main.ipynb y Conclusiones.
 
 5. **Correlación Entre las Cantidades Prestadas y el Número de Eventos :** 
 Investigamos la correlación entre la cantidad promedia prestada por cada cohorte, y el número promedio de eventos. Descubrimos que cuanto más pide prestado un cliente, más veces pedirá prestado, una relación positiva.
