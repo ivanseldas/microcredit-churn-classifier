@@ -1,51 +1,59 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Desafío Empresarial: Análisis de Cohortes para los Pagos de Ironhack (Proyecto 1)
+# Ironhack Payments: Un Análisis de Cohortes (Proyecto 1)
 
-## Introducción
+## Introducción y Visión General del Proyecto
 
-IronHack Payments, una empresa de servicios financieros de vanguardia, ha estado ofreciendo soluciones innovadoras de adelanto de efectivo desde su creación en 2020. Con un compromiso de proporcionar adelantos de dinero gratuitos y precios transparentes, IronHack Payments ha logrado una base de usuarios sustancial. Como parte de su esfuerzo continuo por mejorar sus servicios y entender el comportamiento de los usuarios, IronHack Payments ha encargado un proyecto de análisis de cohortes.
+El objetivo principal de este proyecto fue realizar un análisis de cohortes basado en datos proporcionados por IronHack Payment, una empresa de servicios financieros "ofreciendo soluciones innovadoras de adelanto de efectivo desde su creación en 2020".
 
-## Visión General del Proyecto
+Para ello hemos hecho uso de Python y sus respectivas herramientas de análisis, como Pandas y Plotly.
 
-En este proyecto, realizarás un análisis de cohortes exhaustivo basado en datos proporcionados por IronHack Payments. El objetivo principal es analizar cohortes de usuarios definidos por el mes de creación de su primer adelanto en efectivo. Seguirás la evolución mensual de las métricas clave para estas cohortes, lo que permitirá a IronHack Payments obtener valiosas perspectivas sobre el comportamiento de los usuarios y el rendimiento de sus servicios financieros.
+Creamos cohortes basadas en el mes de la primera transacción de cada cliente, y las analizamos para obtener perspectivas útiles e interesantes sobre el comportamiento de los clientes y su impacto en la empresa.
 
-### Métricas a Analizar
+### Limpieza y Organización de Datos
 
-Calcularás y analizarás las siguientes métricas para cada cohorte:
+# El código y los metodos utilizados para esta etapa se pueden encontrar en el documento Exploratory_Analysis.ipynb.
 
-1. **Frecuencia de Uso del Servicio:** Comprender con qué frecuencia los usuarios de cada cohorte utilizan los servicios de adelanto de efectivo de IronHack Payments a lo largo del tiempo.
-2. **Tasa de Incidentes:** Determinar la tasa de incidentes, enfocándose específicamente en los incidentes de pago, para cada cohorte. Identificar si hay variaciones en las tasas de incidentes entre diferentes cohortes.
-3. **Ingresos Generados por la Cohorte:** Calcular el total de ingresos generados por cada cohorte a lo largo de los meses para evaluar el impacto financiero del comportamiento de los usuarios.
-4. **Nueva Métrica Relevante:** Proponer y calcular una nueva métrica relevante que brinde perspectivas adicionales sobre el comportamiento de los usuarios o el rendimiento de los servicios de IronHack Payments.
+Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y llevar a cabo un análisis exploratorio inicial de los datos.
 
-### Herramientas de Análisis de Datos
+Comenzamos cargando los dos datasets ‘cash’ y ‘fees’  desde archivos CSV y creamos dos DataFrames con la función pd.read_csv(). Luego utilizamos funciones como head, columns, size y describe para aprender más sobre los datos y devolver unas estadísticas como el sum, y los valores máximos y mínimos de columnas como ‘amount.
 
-Se espera que realices el análisis de cohortes utilizando Python, aprovechando principalmente la biblioteca Pandas para la manipulación y análisis de datos. Sin embargo, el análisis principal debe realizarse utilizando Python.
+Luego miramos los diferentes data types de los dos DataFrames. Ya que la mayoría eran del tipo genérico ‘object’, convertimos varias columnas en el data type ‘datetime’, y otras en el tipo ‘category’. Esto importa ventajas como eficiencia y reducción del uso de memoria.
 
-### Análisis Exploratorio de Datos (EDA)
+Después experimentamos con crear subsets de columnas que no necesitamos usar en el momento. Esto lo hicimos fácilmente por “commenting out” columnas específicas.
 
-Antes de sumergirte en el análisis de cohortes, realiza un análisis exploratorio de datos para obtener una comprensión completa del conjunto de datos. Explora estadísticas clave, distribuciones y visualizaciones para identificar patrones y valores atípicos. El EDA te ayudará a tomar decisiones informadas sobre estrategias de preprocesamiento y análisis de datos.
+Hicimos uso del método duplicated() para ver si hay filas or user_ids duplicados en los DataFrames. Usamos la función unique() para mirar valores únicos, y count() para contar otros, como las ocurrencias de cada user_id, para entender la cantidad de transacciones repetidas.
 
-### Análisis de la Calidad de Datos
+Buscamos datos faltantes usando la función isnull(). Descubrimos que la cantidad de user_ids faltantes (2103) era casi igual que el número de deleted_account_ids presentes (2104). De esta manera, pudimos determinar que los user_ids faltantes representan clientes que han eliminado sus cuentas, y ahora son representados por deleted_account_ids.
 
-Evalúa la calidad del conjunto de datos identificando valores faltantes, inconsistencias en los datos y posibles errores. Implementa pasos de limpieza y preprocesamiento de datos para garantizar la fiabilidad de tu análisis. Documenta cualquier problema de calidad de datos encontrado y los pasos tomados para abordarlos.
+Para entender mejor la relación entre los dos DataFrames ‘cash’ y ‘fees’, buscamos columnas compartidas entre ambos ('updated_at', 'id', 'status', 'created_at') y buscamos valores duplicados entre ellos.
 
-### Entregables
+Intentamos unir los DataFrames con la función merge, probando left merge y right merge, pero al final esta parte de conectar y encontrar correlaciones entre los dos DataFrames fue una de las partes que más nos costó conseguir y entender bien. Aun así, consideramos que llegamos a lograr un buen análisis de cohortes en los próximos pasos del proyecto. 
 
-1. **Código en Python:** Proporciona código en Python bien documentado que realice el análisis de cohortes, incluyendo la carga de datos, preprocesamiento, creación de cohortes, cálculo de métricas y visualización.
-2. **Informe de Análisis Exploratorio de Datos:** Prepara un informe que resuma los hallazgos de tu análisis exploratorio de datos. Incluye visualizaciones e insights que ayuden a entender el conjunto de datos.
-3. **Informe de Análisis de la Calidad de Datos:** Documenta los resultados de tu análisis de calidad de datos, destacando cualquier problema y los pasos tomados para resolverlos.
-4. **Presentación Corta:** Crea una presentación concisa (máximo de 4 diapositivas) que resuma tus hallazgos del análisis de cohortes y las perspectivas clave obtenidas del EDA y el análisis de calidad de datos. Esta presentación debe ser adecuada para compartir con el equipo de IronHack Payments.
 
-<!-- ### Información Adicional
+### Análisis Principal
 
-IronHack Payments está emocionado de obtener perspectivas de este análisis de cohortes para tomar decisiones basadas en datos que puedan mejorar sus servicios financieros y la experiencia del usuario. Tu análisis jugará un papel crucial en la configuración de las estrategias futuras de IronHack Payments.
+# El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.
 
-No dudes en contactar si tienes alguna pregunta o necesitas más aclaraciones sobre el proyecto. Una vez completado, programaremos una presentación o reunión remota para discutir tus hallazgos.
+Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
 
-Gracias por asumir este proyecto, y esperamos tus valiosas contribuciones.
+1. **Ingresos Totales por Cohorte:**
+Calculamos los ingresos generados por cada cohorte. Determinamos datos como qué cohorte lideró en ingresos y usuarios (enero dec2019); qué cohorte reflejó un mayor aumento de usuarios respecto el mes anterior(octubre de 2020); y lo que hemos denominado 'la tendencia estacional', un incremento  constante de usuarios desde primavera 2020, con picos en verano y otoño.
 
-Saludos cordiales,
-Ejecutivo de IronHack -->
+2. **Tasa de Retención por Cohorte:** 
+Pudimos calcular la tasa de retención por cada cohorte, y creamos un heatmap para illustrar nuestros hallazgos. Entre ellos, la cohorte con la mayor tasa de retención después del primer mes (mayo de 2020).
 
+3. **Tasa de Incidentes:** 
+Estudiamos la tasa de incidentes por cohorte, es decir los distintos estados de las transacciones. Notamos una dismunición de operaciones fallidas después de junio de 2020, y destacamos la cohorte de octubre 2020 como la que tiene mayores ingresos.
+
+4. **RFM (Recency, Frequency, Monetary) :** 
+Utilizamos el modelo RFM para segmentar a los clientes en función de sus hábitos. Definimos cuatro 'monetary rankings' de Recency (qué tan recientemente un cliente realizó una compra), Frequencia (con qué frecuencia un cliente realiza una compra), y Monetary Value (cuánto dinera gasta un cliente).
+
+Nuestros hallazgos y gráficos se pueden revisar en detalle en los documentos Exploratory_Analysis.ipynb y Conclusiones.
+
+5. **Correlación Entre las Cantidades Prestadas y el Número de Eventos :** 
+Investigamos la correlación entre la cantidad promedia prestada por cada cohorte, y el número promedio de eventos. Descubrimos que cuanto más pide prestado un cliente, más veces pedirá prestado, una relación positiva.
+
+### Conclusiones y Agradecimientos
+
+Nuestras conclusiones se resumen detallademente in el documento Conclusiones, y a través de nuestra presentación PowerPoint. Esperamos que te resulten esclarecedores y interesantes, y te agradecemos por leer.
