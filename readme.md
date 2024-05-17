@@ -12,28 +12,13 @@ Creamos cohortes basadas en el mes de la primera transacción de cada cliente, y
 
 ### Limpieza y Organización de Datos
 
-(El código y los metodos utilizados para esta etapa se pueden encontrar en el documento Exploratory_Analysis.ipynb.)
+**El código y los metodos utilizados para esta etapa se pueden encontrar en el documento Exploratory_Analysis.ipynb.**
 
-Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y llevar a cabo un análisis exploratorio inicial de los datos.
-
-Comenzamos cargando los dos datasets ‘cash’ y ‘fees’  desde archivos CSV y creamos dos DataFrames con la función pd.read_csv(). Luego utilizamos funciones como head, columns, size y describe para aprender más sobre los datos y devolver unas estadísticas como el sum, y los valores máximos y mínimos de columnas como ‘amount.
-
-Luego miramos los diferentes data types de los dos DataFrames. Ya que la mayoría eran del tipo genérico ‘object’, convertimos varias columnas en el data type ‘datetime’, y otras en el tipo ‘category’. Esto importa ventajas como eficiencia y reducción del uso de memoria.
-
-Después experimentamos con crear subsets de columnas que no necesitamos usar en el momento. Esto lo hicimos fácilmente por “commenting out” columnas específicas.
-
-Hicimos uso del método duplicated() para ver si hay filas or user_ids duplicados en los DataFrames. Usamos la función unique() para mirar valores únicos, y count() para contar otros, como las ocurrencias de cada user_id, para entender la cantidad de transacciones repetidas.
-
-Buscamos datos faltantes usando la función isnull(). Descubrimos que la cantidad de user_ids faltantes (2103) era casi igual que el número de deleted_account_ids presentes (2104). De esta manera, pudimos determinar que los user_ids faltantes representan clientes que han eliminado sus cuentas, y ahora son representados por deleted_account_ids.
-
-Para entender mejor la relación entre los dos DataFrames ‘cash’ y ‘fees’, buscamos columnas compartidas entre ambos ('updated_at', 'id', 'status', 'created_at') y buscamos valores duplicados entre ellos.
-
-Intentamos unir los DataFrames con la función merge, probando left merge y right merge, pero al final esta parte de conectar y encontrar correlaciones entre los dos DataFrames fue una de las partes que más nos costó conseguir y entender bien. Aun así, consideramos que llegamos a lograr un buen análisis de cohortes en los próximos pasos del proyecto. 
-
+Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y llevar a cabo un análisis exploratorio inicial de los datos. Esto se puede revisar en el documento antes mencionado, y se resume más detalladamente en el documento Conclusiones.
 
 ### Análisis Principal
 
-(El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.)
+**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.**
 
 Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
 
