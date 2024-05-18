@@ -42,4 +42,4 @@ Investigamos la correlación entre la cantidad promedia prestada por cada cohort
 
 ### Conclusiones y Agradecimientos
 
-Nuestras conclusiones se resumen detallademente in el documento Conclusiones, y a través de nuestra presentación de Google Slides. Esperamos que te resulten esclarecedores y interesantes, y te agradecemos por leer.
+Nuestras conclusiones se resumen detallademente en el documento Conclusiones, y a través de nuestra presentación de Google Slides. Esperamos que te resulten esclarecedores y interesantes, y te agradecemos por leer.
