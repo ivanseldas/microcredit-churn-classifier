@@ -1,6 +1,6 @@
 # Ironhack Payments: Cohort Analysis Project
 
-![image](https://github.com/user-attachments/assets/b0a8090b-b9d5-48f9-873f-060e40218268)
+![cohort_analysis_wallpaper](https://github.com/user-attachments/assets/e9fa25e2-33eb-4a1a-bd85-058d3717982b)
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
 
