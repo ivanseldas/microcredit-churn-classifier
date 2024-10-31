@@ -1,6 +1,6 @@
 # Ironhack Payments: Cohort Analysis Project
 
-![Ironhack Logo](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+![Wallpaper_Image]([https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png](https://www.datascienceportfol.io/static/profile_pics/pr1_D757B6FBD94EA3C19C1B.png))
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
 
