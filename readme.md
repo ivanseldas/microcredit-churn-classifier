@@ -1,52 +1,58 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+# Ironhack Payments: Cohort Analysis Project
 
-[PowerPoint](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
+![Ironhack Logo](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Ironhack Payments: Un Análisis de Cohortes (Proyecto 1)
+[Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
 
-## Introducción y Visión General del Proyecto
+## Project Background and Goals
 
-El objetivo principal de este proyecto fue realizar un análisis de cohortes basado en datos proporcionados por IronHack Payment, una empresa de servicios financieros "ofreciendo soluciones innovadoras de adelanto de efectivo desde su creación en 2020".
+This project is a cohort analysis for Ironhack Payment, a financial services company providing cash advance solutions since 2020. My objective was to analyze customer behavior over time and offer insights into patterns like user retention, revenue trends, and transaction success rates. By exploring these data-driven insights, Ironhack Payment can better understand customer lifecycle and refine its business strategy.
 
-Para ello hemos hecho uso de Python y sus respectivas herramientas de análisis, como Pandas y Plotly.
+I used Python as the primary tool, with Pandas for data manipulation and Plotly for visualizations. Cohorts were defined by each customer’s first transaction month, allowing a month-by-month look into specific customer behaviors.
 
-Creamos cohortes basadas en el mes de la primera transacción de cada cliente, y las analizamos para obtener perspectivas útiles e interesantes sobre el comportamiento de los clientes y su impacto en la empresa.
+## Project Files
 
-### Limpieza y Organización de Datos
+- **Exploratory Analysis** - [Exploratory_Analysis.ipynb](./Exploratory_Analysis.ipynb): Code for data cleaning and initial exploratory analysis.
+- **Main Analysis** - [Main.ipynb](./Main.ipynb): Code for the main cohort analysis, including calculations and visualizations.
+- **Detailed Report** - [Detailed Report](https://docs.google.com/document/d/1x_SGMHIXYSq7ZKbDT0LDCKbsVLg8nutCPDme0G9rrhA/edit?usp=sharing)
+- **Presentation** - [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
 
-**El código y los metodos utilizados para esta etapa se pueden encontrar en el documento Exploratory_Analysis.ipynb.**
+## Key Steps and Insights
 
-Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y llevar a cabo un análisis exploratorio inicial de los datos. Esto se puede revisar en el documento antes mencionado, y se resume más detalladamente en el documento Conclusiones.
+### Data Cleaning and Preparation
+To prepare for analysis, I focused first on organizing and cleaning the data in `Exploratory_Analysis.ipynb`. I removed duplicates, filled missing values, and standardized date formats to build the cohort structure. This preparation laid the groundwork for a detailed cohort analysis.
 
-### Análisis Principal
+### Main Analysis
 
-**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.**
+In the main analysis, documented in `Main.ipynb`, I created cohorts based on each client’s first transaction month and calculated specific metrics to track trends over time. Here are some of the insights I found:
 
-Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
+1. **Total Revenue by Cohort**  
+   Analyzing revenue by cohort highlighted trends in customer growth and seasonal behaviors. For instance:
+   - The January 2019 cohort led in revenue and total users.
+   - The October 2020 cohort saw the highest increase in new users month-over-month.
+   - A seasonal pattern was observed, with significant user growth during spring, peaking in summer and fall.
 
-1. **Ingresos Totales por Cohorte:**
-Calculamos los ingresos generados por cada cohorte. Determinamos datos como qué cohorte lideró en ingresos y usuarios (enero de 2019); qué cohorte reflejó un mayor aumento de usuarios respecto el mes anterior(octubre de 2020); y lo que hemos denominado 'la tendencia estacional', un incremento  constante de usuarios desde primavera 2020, con picos en verano y otoño.
+2. **Retention Rate by Cohort**  
+   Using a retention heatmap, I found that the May 2020 cohort had the highest retention rate after the first month. Visualizing retention rates provided insight into customer loyalty over time.
 
-2. **Tasa de Retención por Cohorte:** 
-Pudimos calcular la tasa de retención por cada cohorte, y creamos un heatmap para illustrar nuestros hallazgos. Entre ellos, la cohorte con la mayor tasa de retención después del primer mes (mayo de 2020).
+3. **Incident Rate by Cohort**  
+   By examining transaction success rates, I noticed that failed transactions decreased after June 2020. Additionally, the October 2020 cohort generated the highest revenue, despite a high volume of transactions.
 
-3. **Tasa de Incidentes:** 
-Estudiamos la tasa de incidentes por cohorte, es decir los distintos estados de las transacciones. Notamos una dismunición de operaciones fallidas después de junio de 2020, y destacamos la cohorte de octubre 2020 como la que tiene mayores ingresos.
+4. **RFM (Recency, Frequency, Monetary) Analysis**  
+   I applied the RFM model to segment customers based on recency (time since the last transaction), frequency (purchase frequency), and monetary value (spending). This segmentation highlighted high-value customer groups for potential retention strategies.
 
-4. **RFM (Recency, Frequency, Monetary) :** 
-Utilizamos el modelo RFM para segmentar a los clientes en función de sus hábitos. Definimos cuatro 'monetary rankings' de Recency (qué tan recientemente un cliente realizó una compra), Frequencia (con qué frecuencia un cliente realiza una compra), y Monetary Value (cuánto dinera gasta un cliente).
-Nuestros hallazgos y gráficos se pueden revisar en detalle en los documentos Main.ipynb y Conclusiones.
+5. **Correlation Between Loan Amount and Transaction Frequency**  
+   Lastly, I explored the correlation between loan amount and transaction frequency, finding a positive relationship—customers who borrowed larger amounts tended to borrow more frequently over time.
 
-5. **Correlación Entre las Cantidades Prestadas y el Número de Eventos :** 
-Investigamos la correlación entre la cantidad promedia prestada por cada cohorte, y el número promedio de eventos. Descubrimos que cuanto más pide prestado un cliente, más veces pedirá prestado, una relación positiva.
+## Conclusions and Reflections
 
-### Conclusiones y Agradecimientos
+Through this analysis, I gained valuable experience in cohort analysis, data visualization, and RFM modeling. This project not only provided actionable insights for Ironhack Payment but also reinforced my skills in structuring and interpreting data to inform business decisions.
 
-Nuestras conclusiones se resumen detallademente en el documento Conclusiones, y a través de nuestra presentación de Google Slides. Esperamos que te resulten esclarecedores y interesantes, y te agradecemos por leer.
+I hope these findings and recommendations help Ironhack Payment in their strategy, and I appreciate your time in reviewing my project!
 
-### Archivos
+Thank you!
 
-[PowerPoint](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
+---
 
-[Document](https://docs.google.com/document/d/1x_SGMHIXYSq7ZKbDT0LDCKbsVLg8nutCPDme0G9rrhA/edit?usp=sharing)
+Feel free to reach out if you have any questions or feedback.
 
