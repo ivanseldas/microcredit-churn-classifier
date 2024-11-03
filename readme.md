@@ -12,7 +12,7 @@ This project analyzes customer behavior for Ironhack Payment, a financial servic
   
   ![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
 
-- **Retention Analysis**: May 2020 cohort showed the highest early retention, visualized through heatmaps.
+- **Retention Analysis**: March 2020 cohort showed the highest early retention, visualized through heatmaps.
   
   ![retention_heatmap](https://github.com/user-attachments/assets/020a1480-e247-4b6e-9a09-eeab770ace2e)
 
