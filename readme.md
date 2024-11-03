@@ -1,12 +1,10 @@
 # Ironhack Payments: Cohort Analysis Project
 
+This project analyzes customer behavior for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
+
 ![cohort_analysis_wallpaper](https://github.com/user-attachments/assets/e9fa25e2-33eb-4a1a-bd85-058d3717982b)
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
-
-## Project Overview
-
-This project analyzes customer behavior for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
 
 ## Key Findings
 
