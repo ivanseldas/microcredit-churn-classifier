@@ -40,11 +40,13 @@ In the main analysis, documented in `Main.ipynb`, I created cohorts based on eac
 
 3. **Incident Rate by Cohort**  
    By examining transaction success rates, I noticed that failed transactions decreased after June 2020. Additionally, the October 2020 cohort generated the highest revenue, despite a high volume of transactions.
+   ![status_per_cohort](https://github.com/user-attachments/assets/df7e6194-f234-461e-a7e1-1c3adb1f57f8)
 
-4. **RFM (Recency, Frequency, Monetary) Analysis**  
+5. **RFM (Recency, Frequency, Monetary) Analysis**  
    I applied the RFM model to segment customers based on recency (time since the last transaction), frequency (purchase frequency), and monetary value (spending). This segmentation highlighted high-value customer groups for potential retention strategies.
+   ![user_ranking](https://github.com/user-attachments/assets/b090ebe0-e818-4198-9ace-e22dce4c0309)
 
-5. **Correlation Between Loan Amount and Transaction Frequency**  
+6. **Correlation Between Loan Amount and Transaction Frequency**  
    Lastly, I explored the correlation between loan amount and transaction frequency, finding a positive relationship—customers who borrowed larger amounts tended to borrow more frequently over time.
 
 ## Conclusions and Reflections
