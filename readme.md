@@ -8,7 +8,7 @@ This project analyzes customer behavior for Ironhack Payment, a financial servic
 
 ## Key Findings
 
-- **Revenue by Cohort**: January 2019 cohort led in revenue, with strong seasonal growth patterns in spring and summer.
+- **Revenue by Cohort**: October 2020 cohort led in revenue, with strong seasonal growth patterns in spring and summer.
   
   ![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
 
