@@ -4,60 +4,39 @@
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
 
-## Project Background and Goals
+## Project Overview
 
-This project is a cohort analysis for Ironhack Payment, a financial services company providing cash advance solutions since 2020. My objective was to analyze customer behavior over time and offer insights into patterns like user retention, revenue trends, and transaction success rates. By exploring these data-driven insights, Ironhack Payment can better understand customer lifecycle and refine its business strategy.
+This project analyzes customer behavior for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
 
-I used Python as the primary tool, with Pandas for data manipulation and Plotly for visualizations. Cohorts were defined by each customer’s first transaction month, allowing a month-by-month look into specific customer behaviors.
+## Key Findings
 
-## Project Files
+- **Revenue by Cohort**: January 2019 cohort led in revenue, with strong seasonal growth patterns in spring and summer.
+  
+  ![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
 
-- **Exploratory Analysis** - [Exploratory_Analysis.ipynb](./Exploratory_Analysis.ipynb): Code for data cleaning and initial exploratory analysis.
-- **Main Analysis** - [Main.ipynb](./Main.ipynb): Code for the main cohort analysis, including calculations and visualizations.
-- **Detailed Report** - [Detailed Report](https://docs.google.com/document/d/1x_SGMHIXYSq7ZKbDT0LDCKbsVLg8nutCPDme0G9rrhA/edit?usp=sharing)
-- **Presentation** - [Google Slides Presentation](https://docs.google.com/presentation/d/1_L4GUAM97lEYs5Hsi1Z-n9deOiAW1OBkdNPWSkRmq7s/edit?usp=sharing)
+- **Retention Analysis**: May 2020 cohort showed the highest early retention, visualized through heatmaps.
+  
+  ![retention_heatmap](https://github.com/user-attachments/assets/020a1480-e247-4b6e-9a09-eeab770ace2e)
 
-## Key Steps and Insights
+- **Transaction Success**: Post-June 2020, transaction failures decreased, while October 2020 cohort generated the highest revenue.
+  
+  ![status_per_cohort](https://github.com/user-attachments/assets/df7e6194-f234-461e-a7e1-1c3adb1f57f8)
 
-### Data Cleaning and Preparation
-To prepare for analysis, I focused first on organizing and cleaning the data in `Exploratory_Analysis.ipynb`. I removed duplicates, filled missing values, and standardized date formats to build the cohort structure. This preparation laid the groundwork for a detailed cohort analysis.
+- **RFM Segmentation**: Identified high-value customer groups, providing insights for targeted retention strategies.
+  
+  ![user_ranking](https://github.com/user-attachments/assets/15e7531f-dfe6-4b45-9d71-6f31494ba0ff)
 
-### Main Analysis
+- **Loan Amount & Frequency**: Positive correlation found, with larger loans linked to higher borrowing frequency.
 
-In the main analysis, documented in `Main.ipynb`, I created cohorts based on each client’s first transaction month and calculated specific metrics to track trends over time. Here are some of the insights I found:
+## Files
 
-1. **Total Revenue by Cohort**  
-   Analyzing revenue by cohort highlighted trends in customer growth and seasonal behaviors. For instance:
-   - The January 2019 cohort led in revenue and total users.
-   - The October 2020 cohort saw the highest increase in new users month-over-month.
-   - A seasonal pattern was observed, with significant user growth during spring, peaking in summer and fall.
-![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
+- **Exploratory Analysis** - [Exploratory_Analysis.ipynb](./Exploratory_Analysis.ipynb): Initial data cleaning and preparation.
+- **Main Analysis** - [Main.ipynb](./Main.ipynb): Cohort analysis and visualizations.
 
+## Conclusion
 
-2. **Retention Rate by Cohort**  
-   Using a retention heatmap, I found that the May 2020 cohort had the highest retention rate after the first month. Visualizing retention rates provided insight into customer loyalty over time.
-![image](https://github.com/user-attachments/assets/020a1480-e247-4b6e-9a09-eeab770ace2e)
-
-3. **Incident Rate by Cohort**  
-   By examining transaction success rates, I noticed that failed transactions decreased after June 2020. Additionally, the October 2020 cohort generated the highest revenue, despite a high volume of transactions.
-   ![status_per_cohort](https://github.com/user-attachments/assets/df7e6194-f234-461e-a7e1-1c3adb1f57f8)
-
-5. **RFM (Recency, Frequency, Monetary) Analysis**  
-   I applied the RFM model to segment customers based on recency (time since the last transaction), frequency (purchase frequency), and monetary value (spending). This segmentation highlighted high-value customer groups for potential retention strategies.
-![user_ranking](https://github.com/user-attachments/assets/15e7531f-dfe6-4b45-9d71-6f31494ba0ff)
-
-6. **Correlation Between Loan Amount and Transaction Frequency**  
-   Lastly, I explored the correlation between loan amount and transaction frequency, finding a positive relationship—customers who borrowed larger amounts tended to borrow more frequently over time.
-
-## Conclusions and Reflections
-
-Through this analysis, I gained valuable experience in cohort analysis, data visualization, and RFM modeling. This project not only provided actionable insights for Ironhack Payment but also reinforced my skills in structuring and interpreting data to inform business decisions.
-
-I hope these findings and recommendations help Ironhack Payment in their strategy, and I appreciate your time in reviewing my project!
-
-Thank you!
+The cohort analysis provided valuable insights for Ironhack Payment’s growth strategy. Seasonal trends in revenue indicate opportunities to boost engagement during spring and summer, while RFM segmentation helps identify high-value customers for retention efforts. The reduction in transaction failures post-June 2020 suggests improved operational efficiency, with further potential to enhance customer experience. Together, these insights offer actionable steps to increase customer loyalty, optimize revenue streams, and improve overall transaction success.
 
 ---
 
-Feel free to reach out if you have any questions or feedback.
-
+Feel free to reach out for more details!
