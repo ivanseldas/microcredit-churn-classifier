@@ -33,8 +33,13 @@ This project analyzes customer behavior for Ironhack Payment, a financial servic
 
 ## Conclusion
 
-The cohort analysis provided valuable insights for Ironhack Payment’s growth strategy. Seasonal trends in revenue indicate opportunities to boost engagement during spring and summer, while RFM segmentation helps identify high-value customers for retention efforts. The reduction in transaction failures post-June 2020 suggests improved operational efficiency, with further potential to enhance customer experience. Together, these insights offer actionable steps to increase customer loyalty, optimize revenue streams, and improve overall transaction success.
+The cohort analysis provided valuable insights for Ironhack Payment’s growth strategy:
 
----
+- **Seasonal Revenue Trends**: Identified opportunities to boost engagement during spring and summer.
+- **High-Value Customer Segmentation**: RFM analysis highlighted key customer groups for targeted retention efforts.
+- **Improved Operational Efficiency**: Transaction failures decreased post-June 2020, indicating enhanced reliability.
+- **Actionable Strategies**: Insights support initiatives to increase customer loyalty, optimize revenue, and improve transaction success.
+
+Together, these findings guide strategic actions to strengthen Ironhack Payment's market position.
 
 Feel free to reach out for more details!
