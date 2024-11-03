@@ -31,6 +31,8 @@ In the main analysis, documented in `Main.ipynb`, I created cohorts based on eac
    - The January 2019 cohort led in revenue and total users.
    - The October 2020 cohort saw the highest increase in new users month-over-month.
    - A seasonal pattern was observed, with significant user growth during spring, peaking in summer and fall.
+![total_revenue_cohort](https://github.com/user-attachments/assets/9cbf7fc3-5fbd-4fc4-866a-2d4d08af510d)
+
 
 2. **Retention Rate by Cohort**  
    Using a retention heatmap, I found that the May 2020 cohort had the highest retention rate after the first month. Visualizing retention rates provided insight into customer loyalty over time.
