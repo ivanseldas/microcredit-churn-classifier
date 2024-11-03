@@ -34,6 +34,7 @@ In the main analysis, documented in `Main.ipynb`, I created cohorts based on eac
 
 2. **Retention Rate by Cohort**  
    Using a retention heatmap, I found that the May 2020 cohort had the highest retention rate after the first month. Visualizing retention rates provided insight into customer loyalty over time.
+![image](https://github.com/user-attachments/assets/020a1480-e247-4b6e-9a09-eeab770ace2e)
 
 3. **Incident Rate by Cohort**  
    By examining transaction success rates, I noticed that failed transactions decreased after June 2020. Additionally, the October 2020 cohort generated the highest revenue, despite a high volume of transactions.
