@@ -44,7 +44,7 @@ In the main analysis, documented in `Main.ipynb`, I created cohorts based on eac
 
 5. **RFM (Recency, Frequency, Monetary) Analysis**  
    I applied the RFM model to segment customers based on recency (time since the last transaction), frequency (purchase frequency), and monetary value (spending). This segmentation highlighted high-value customer groups for potential retention strategies.
-   ![user_ranking](https://github.com/user-attachments/assets/b090ebe0-e818-4198-9ace-e22dce4c0309)
+![user_ranking](https://github.com/user-attachments/assets/15e7531f-dfe6-4b45-9d71-6f31494ba0ff)
 
 6. **Correlation Between Loan Amount and Transaction Frequency**  
    Lastly, I explored the correlation between loan amount and transaction frequency, finding a positive relationship—customers who borrowed larger amounts tended to borrow more frequently over time.
