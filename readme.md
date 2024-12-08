@@ -1,4 +1,4 @@
-# Ironhack Payments: Cohort Analysis Project
+# Microcredit Churn Predictor
 
 Customer behaviour analysis for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
 
