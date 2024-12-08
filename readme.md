@@ -1,43 +1,43 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+# Ironhack Payments: Cohort Analysis Project
 
-# Ironhack Payments: Un Análisis de Cohortes (Proyecto 1)
+Customer behaviour analysis for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
 
-## Introducción y Visión General del Proyecto
+![cohort_analysis_wallpaper](https://github.com/user-attachments/assets/e9fa25e2-33eb-4a1a-bd85-058d3717982b)
 
-El objetivo principal de este proyecto fue realizar un análisis de cohortes basado en datos proporcionados por IronHack Payment, una empresa de servicios financieros "ofreciendo soluciones innovadoras de adelanto de efectivo desde su creación en 2020".
+## Key Findings
 
-Para ello hemos hecho uso de Python y sus respectivas herramientas de análisis, como Pandas y Plotly.
+- **Revenue by Cohort**: October 2020 cohort led in revenue, with strong seasonal growth patterns in spring and summer.
+  
+  ![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
 
-Creamos cohortes basadas en el mes de la primera transacción de cada cliente, y las analizamos para obtener perspectivas útiles e interesantes sobre el comportamiento de los clientes y su impacto en la empresa.
+- **Retention Analysis**: May 2020 cohort showed the highest early retention, visualized through heatmaps.
+  
+  ![retention_heatmap](https://github.com/user-attachments/assets/020a1480-e247-4b6e-9a09-eeab770ace2e)
 
-### Limpieza y Organización de Datos
+- **Transaction Success**: Post-June 2020, transaction failures decreased, while October 2020 cohort generated the highest revenue.
+  
+  ![status_per_cohort](https://github.com/user-attachments/assets/df7e6194-f234-461e-a7e1-1c3adb1f57f8)
 
-**El código y los metodos utilizados para esta etapa se pueden encontrar en el documento Exploratory_Analysis.ipynb.**
+- **RFM Segmentation**: Identified high-value customer groups, providing insights for targeted retention strategies.
+  
+  ![user_ranking](https://github.com/user-attachments/assets/15e7531f-dfe6-4b45-9d71-6f31494ba0ff)
 
-Para empezar, utilizamos diversos métodos para limpiar y manejar los datos, y llevar a cabo un análisis exploratorio inicial de los datos. Esto se puede revisar en el documento antes mencionado, y se resume más detalladamente en el documento Conclusiones.
+- **Loan Amount & Frequency**: Positive correlation found, with larger loans linked to higher borrowing frequency.
 
-### Análisis Principal
+## Files
 
-**El código, los metodos y los gráficos reveladores relacionados con esta etapa del proyecto se pueden encontrar en el documento Main.ipynb.**
+- **Exploratory Analysis** - [Exploratory_Analysis.ipynb](./Exploratory_Analysis.ipynb): Initial data cleaning and preparation.
+- **Main Analysis** - [Main.ipynb](./Main.ipynb): Cohort analysis and visualizations.
 
-Para nuestra analisis principal, creamos cohortes basadas en el mes de la primera transacción de cada cliente, y de ahí nos centramos en obtener y analizar unas métricas especificas para cada cohorte:
+## Conclusion
 
-1. **Ingresos Totales por Cohorte:**
-Calculamos los ingresos generados por cada cohorte. Determinamos datos como qué cohorte lideró en ingresos y usuarios (enero dec2019); qué cohorte reflejó un mayor aumento de usuarios respecto el mes anterior(octubre de 2020); y lo que hemos denominado 'la tendencia estacional', un incremento  constante de usuarios desde primavera 2020, con picos en verano y otoño.
+The cohort analysis provided valuable insights for Ironhack Payment’s growth strategy:
 
-2. **Tasa de Retención por Cohorte:** 
-Pudimos calcular la tasa de retención por cada cohorte, y creamos un heatmap para illustrar nuestros hallazgos. Entre ellos, la cohorte con la mayor tasa de retención después del primer mes (mayo de 2020).
+- **Seasonal Revenue Trends**: Identified opportunities to boost engagement during spring and summer.
+- **High-Value Customer Segmentation**: RFM analysis highlighted key customer groups for targeted retention efforts.
+- **Improved Operational Efficiency**: Transaction failures decreased post-June 2020, indicating enhanced reliability.
+- **Actionable Strategies**: Insights support initiatives to increase customer loyalty, optimize revenue, and improve transaction success.
 
-3. **Tasa de Incidentes:** 
-Estudiamos la tasa de incidentes por cohorte, es decir los distintos estados de las transacciones. Notamos una dismunición de operaciones fallidas después de junio de 2020, y destacamos la cohorte de octubre 2020 como la que tiene mayores ingresos.
+Together, these findings guide strategic actions to strengthen Ironhack Payment's market position.
 
-4. **RFM (Recency, Frequency, Monetary) :** 
-Utilizamos el modelo RFM para segmentar a los clientes en función de sus hábitos. Definimos cuatro 'monetary rankings' de Recency (qué tan recientemente un cliente realizó una compra), Frequencia (con qué frecuencia un cliente realiza una compra), y Monetary Value (cuánto dinera gasta un cliente).
-Nuestros hallazgos y gráficos se pueden revisar en detalle en los documentos Main.ipynb y Conclusiones.
-
-5. **Correlación Entre las Cantidades Prestadas y el Número de Eventos :** 
-Investigamos la correlación entre la cantidad promedia prestada por cada cohorte, y el número promedio de eventos. Descubrimos que cuanto más pide prestado un cliente, más veces pedirá prestado, una relación positiva.
-
-### Conclusiones y Agradecimientos
-
-Nuestras conclusiones se resumen detallademente in el documento Conclusiones, y a través de nuestra presentación de PowerPoint. Esperamos que te resulten esclarecedores y interesantes, y te agradecemos por leer.
+Feel free to reach out for more details!
