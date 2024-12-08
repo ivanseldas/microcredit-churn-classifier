@@ -31,13 +31,15 @@ Customer behaviour analysis for Ironhack Payment, a financial services provider,
 
 ## Conclusion
 
-The cohort analysis provided valuable insights for Ironhack Payment’s growth strategy:
+1. **Model Comparison**:
+   - The **RandomForestRegressor** performs slightly better, with both models achieving over **95% accuracy**.
 
-- **Seasonal Revenue Trends**: Identified opportunities to boost engagement during spring and summer.
-- **High-Value Customer Segmentation**: RFM analysis highlighted key customer groups for targeted retention efforts.
-- **Improved Operational Efficiency**: Transaction failures decreased post-June 2020, indicating enhanced reliability.
-- **Actionable Strategies**: Insights support initiatives to increase customer loyalty, optimize revenue, and improve transaction success.
+2. **Data Limitations**:
+   - Despite the **high accuracy**, the models do not appear to be **overfitting**, suggesting they are well-generalized.
+   - However, the dataset covers only **1 year**, which may limit capturing long-term churn trends.
 
-Together, these findings guide strategic actions to strengthen Ironhack Payment's market position.
+3. **Feature Importance**:
+   - **`Recency`** strongly correlates with churn, aligning with the 90-day threshold.
 
-Feel free to reach out for more details!
+4. **Cohort Impact**:
+   - Customer **cohorts** from first transactions significantly affect churn predictions, highlighting the importance of segmentation.
