@@ -26,8 +26,7 @@ Customer behaviour analysis for Ironhack Payment, a financial services provider,
 
 ## Files
 
-- **Exploratory Analysis** - [Exploratory_Analysis.ipynb](./Exploratory_Analysis.ipynb): Initial data cleaning and preparation.
-- **Main Analysis** - [Main.ipynb](./Main.ipynb): Cohort analysis and visualizations.
+- **Churn Prediction** - [churn_prediction.ipynb](./churn_prediction.ipynb)
 
 ## Conclusion
 
