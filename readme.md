@@ -5,26 +5,26 @@ Welcome to my Churn Prediction project, where I explored the challenge of identi
 ![cohort_analysis_wallpaper](https://github.com/user-attachments/assets/e9fa25e2-33eb-4a1a-bd85-058d3717982b)
 
 1. **Exploratory Data Analysis (EDA):**
-   - Conducted detailed analyses to uncover key churn drivers and customer behaviour patterns.
-   - Leveraged visualizations to make data insights actionable.
+   - Identify cohorts by first transaction and retention rate:
+   ![image](https://github.com/user-attachments/assets/e4950aec-4658-4ff4-8982-2a87f413ff7b)
 
 2. **Feature Engineering:**
-   - Designed meaningful features, including recency and frequency metrics, to improve model performance.
+   - Designed meaningful features, including recency and lifetime metrics, to improve model performance.
    - Processed and transformed raw data into a structured format suitable for machine learning.
+   - Create a Dataframe from transactional data to analytical data for churn prediction with the following correlation between features:
+   ![image](https://github.com/user-attachments/assets/e4b39298-67ad-4339-a83e-930059ed27d7)
 
 3. **Machine Learning Models:**
-   - Developed and evaluated several models, with Random Forest achieving over 95% accuracy.
-   - Focused on interpretability and reliability by benchmarking multiple approaches.
+   - Developed and evaluated a LogisticRegression and RandomForestClassifier models, 
+   - Achieved over 90% accuracy in both of them measure by F1-Score, ROC-AUC-Curve and Confusion Matrix
 
-4. **Results:**
-   - Delivered a robust model to predict churn effectively.
-   - Identified actionable insights to guide retention strategies, emphasizing business impact.
+   RandomForestClassifier Confusion Matrix:
+![image](https://github.com/user-attachments/assets/5597ef0a-f1f8-4d66-adc7-17b913c64edf)
 
-## Files
+   ROC Curve:
+![image](https://github.com/user-attachments/assets/0dbedae6-ea8e-4c0d-8695-b031bfae1146)
 
-- **Churn Prediction** - [churn_prediction.ipynb](./churn_prediction.ipynb)
-
-## Conclusion
+## Results
 
 1. **Model Comparison**:
    - The **RandomForestRegressor** performs slightly better, with both models achieving over **95% accuracy**.
@@ -38,3 +38,9 @@ Welcome to my Churn Prediction project, where I explored the challenge of identi
 
 4. **Cohort Impact**:
    - Customer **cohorts** from first transactions significantly affect churn predictions, highlighting the importance of segmentation.
+
+## Files
+
+- **Churn Prediction** - [churn_prediction.ipynb](./churn_prediction.ipynb)
+
+
