@@ -9,20 +9,19 @@ Welcome to my Churn Prediction project, where I explored the challenge of identi
    ![image](https://github.com/user-attachments/assets/e4950aec-4658-4ff4-8982-2a87f413ff7b)
 
 2. **Feature Engineering:**
-   - Designed meaningful features, including recency and lifetime metrics, to improve model performance.
-   - Processed and transformed raw data into a structured format suitable for machine learning.
+   - Set Churn as > 90 days without activity
    - Create a Dataframe from transactional data to analytical data for churn prediction with the following correlation between features:
    ![image](https://github.com/user-attachments/assets/e4b39298-67ad-4339-a83e-930059ed27d7)
 
 3. **Machine Learning Models:**
-   - Developed and evaluated a LogisticRegression and RandomForestClassifier models, 
-   - Achieved over 90% accuracy in both of them measure by F1-Score, ROC-AUC-Curve and Confusion Matrix
+   - Developed and evaluated Logistic Regression and Random Forest Classifier models, 
+   - Achieved over 90% accuracy in both of them measured by F1-Score, ROC-AUC-Curve and Confusion Matrix
 
    RandomForestClassifier Confusion Matrix:
-![image](https://github.com/user-attachments/assets/5597ef0a-f1f8-4d66-adc7-17b913c64edf)
+   ![image](https://github.com/user-attachments/assets/12b7ac69-62ca-4c24-8125-97e94b20b7e9)
 
    ROC Curve:
-![image](https://github.com/user-attachments/assets/0dbedae6-ea8e-4c0d-8695-b031bfae1146)
+   ![image](https://github.com/user-attachments/assets/9e149600-5efb-4753-90cc-438950a9bd8c)
 
 ## Results
 
