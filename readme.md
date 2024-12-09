@@ -16,11 +16,7 @@ Customer behaviour analysis for Ironhack Payment, a financial services provider,
 
 - **Transaction Success**: Post-June 2020, transaction failures decreased, while October 2020 cohort generated the highest revenue.
   
-  ![status_per_cohort](https://github.com/user-attachments/assets/df7e6194-f234-461e-a7e1-1c3adb1f57f8)
-
-- **RFM Segmentation**: Identified high-value customer groups, providing insights for targeted retention strategies.
-  
-  ![user_ranking](https://github.com/user-attachments/assets/15e7531f-dfe6-4b45-9d71-6f31494ba0ff)
+  ![image](https://github.com/user-attachments/assets/2f72f493-8063-4ef4-9031-9027eba6d8d0)
 
 - **Loan Amount & Frequency**: Positive correlation found, with larger loans linked to higher borrowing frequency.
 
