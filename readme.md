@@ -12,7 +12,7 @@ Customer behaviour analysis for Ironhack Payment, a financial services provider,
 
 - **Retention Analysis**: May 2020 cohort showed the highest early retention, visualized through heatmaps.
   
-  ![image](https://github.com/user-attachments/assets/460ca861-fa7c-4473-9ffb-c95a78fdb788)
+  ![image](https://github.com/user-attachments/assets/19ab6a89-041d-4792-b13b-c8c941d42258)
 
 - **Transaction Success**: Post-June 2020, transaction failures decreased, while October 2020 cohort generated the highest revenue.
   
