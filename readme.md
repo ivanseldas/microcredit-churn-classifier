@@ -26,7 +26,7 @@ Welcome to my Churn Prediction project, where I explored the challenge of identi
 ## Results
 
 1. **Model Comparison**:
-   - The **RandomForestRegressor** performs slightly better, with both models achieving over **95% accuracy**.
+   - The **RandomForestRegressor** performs slightly better, with both models achieving over **90% accuracy**.
 
 2. **Data Limitations**:
    - Despite the **high accuracy**, the models do not appear to be **overfitting**, suggesting they are well-generalized.
