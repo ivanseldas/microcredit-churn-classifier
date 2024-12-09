@@ -1,24 +1,24 @@
 # Microcredit Churn Classifier
 
-Customer behaviour analysis for Ironhack Payment, a financial services provider, to uncover insights into retention, revenue trends, and transaction success. Using Python, Pandas, and Plotly, I created cohort-based views that highlight customer lifecycle patterns and seasonal trends to support strategic growth.
+Welcome to my Churn Prediction project, where I explored the challenge of identifying customers at risk of leaving a business. By applying machine learning techniques, I built a pipeline capable of delivering accurate predictions and valuable insights to support decision-making.
 
 ![cohort_analysis_wallpaper](https://github.com/user-attachments/assets/e9fa25e2-33eb-4a1a-bd85-058d3717982b)
 
-## Key Findings
+1. **Exploratory Data Analysis (EDA):**
+   - Conducted detailed analyses to uncover key churn drivers and customer behaviour patterns.
+   - Leveraged visualizations to make data insights actionable.
 
-- **Revenue by Cohort**: October 2020 cohort led in revenue, with strong seasonal growth patterns in spring and summer.
-  
-  ![income_users_cohort](https://github.com/user-attachments/assets/14189e28-ded7-4830-a8a9-61b18739de14)
+2. **Feature Engineering:**
+   - Designed meaningful features, including recency and frequency metrics, to improve model performance.
+   - Processed and transformed raw data into a structured format suitable for machine learning.
 
-- **Retention Analysis**: May 2020 cohort showed the highest early retention, visualized through heatmaps.
-  
-  ![image](https://github.com/user-attachments/assets/19ab6a89-041d-4792-b13b-c8c941d42258)
+3. **Machine Learning Models:**
+   - Developed and evaluated several models, with Random Forest achieving over 95% accuracy.
+   - Focused on interpretability and reliability by benchmarking multiple approaches.
 
-- **Transaction Success**: Post-June 2020, transaction failures decreased, while October 2020 cohort generated the highest revenue.
-  
-  ![image](https://github.com/user-attachments/assets/2f72f493-8063-4ef4-9031-9027eba6d8d0)
-
-- **Loan Amount & Frequency**: Positive correlation found, with larger loans linked to higher borrowing frequency.
+4. **Results:**
+   - Delivered a robust model to predict churn effectively.
+   - Identified actionable insights to guide retention strategies, emphasizing business impact.
 
 ## Files
 
